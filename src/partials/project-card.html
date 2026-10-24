@@ -1,0 +1,15 @@
+<article class="project-card reveal" data-category="{{category}}">
+            <div class="project-card__media">
+              <x-img name="{{img}}" alt="{{alt}}" sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 400px">
+              {{#size}}<span class="project-card__size">{{size}}</span>{{/size}}
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__type">{{type}}</p>
+              <h3>{{title}}</h3>
+              <ul class="project-card__meta" role="list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>{{location}}</span></li>
+                {{#client}}<li><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg><span><strong>Client:</strong> {{client}}</span></li>{{/client}}
+                <li><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg><span><strong>Our role:</strong> {{role}}</span></li>
+              </ul>
+            </div>
+          </article>

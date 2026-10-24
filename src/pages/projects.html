@@ -1,0 +1,70 @@
+<!--page {
+  "title": "Solar Projects in Tamil Nadu | Prosun Energy",
+  "description": "Solar projects by Prosun Energy: ground-mounted plants, industrial and institutional rooftop systems, and project management consulting for utility-scale solar in Tamil Nadu.",
+  "nav": "projects",
+  "crumbs": [{"name": "Projects", "url": "/projects/"}]
+} -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__media"><x-img name="hero-aerial-solar-plant" alt="" sizes="100vw" loading="eager"></div>
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Projects</li></ol></nav>
+          <p class="eyebrow">Projects</p>
+          <h1 class="h1" id="page-title">Solar projects across Tamil Nadu</h1>
+          <p class="lead">A selection of our work: institutional and industrial rooftops, ground-mounted plants, and project management consulting on utility-scale solar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERIFY (all project details): the current site has copy-paste errors across project pages. Values used here:
+         - 4 MW Puliyampatti: client taken from Customers page ("Prosun Green Energy Pvt Ltd, Puliyampatty"); role assumed.
+         - Gudimangalam: size listed as "200 KW" on the source page, which looks copied from another project, so size and client are omitted.
+         - 500 kW SBM Spinners, Karur: size/location from page title and image filenames; body text on source page describes a different project.
+         - 200 kW Abirami Charitable Trust: the source page header also lists "SBM Spinners, Karur" as client.
+         - 100 kW GRD Educational Trust: role is project management consulting per source page.
+         - NLC India 100 MW and 50 MW: PMC with ACE Renewtech; completion date and area from source page. -->
+    <section class="section" aria-labelledby="list-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="list-title">Project list</h2>
+        <div class="filters" role="group" aria-label="Filter projects" data-filters>
+          <button class="filter-btn" type="button" aria-pressed="true" data-filter="all">All projects</button>
+          <button class="filter-btn" type="button" aria-pressed="false" data-filter="utility">Ground-mounted &amp; utility scale</button>
+          <button class="filter-btn" type="button" aria-pressed="false" data-filter="ci">Commercial &amp; institutional rooftop</button>
+          <button class="filter-btn" type="button" aria-pressed="false" data-filter="pmc">Project management consulting</button>
+        </div>
+        <p class="filter-status" role="status" aria-live="polite" data-filter-status></p>
+
+        <div class="project-grid">
+          {{> project-card category="utility" img="puliyampatti-4mw-array" alt="Rows of solar modules under a cloudy sky at the 4 MW Puliyampatti plant" size="4 MW" type="Ground-mounted plant" title="4 MW solar power plant, Puliyampatti" location="Puliyampatti, Tamil Nadu" client="Prosun Green Energy Pvt Ltd" role="Project execution"}}
+          {{> project-card category="utility pmc" img="nlc-100mw-aerial" alt="Aerial view of a utility-scale solar park with wind turbines nearby" size="100 MW" type="Utility scale · Completed August 2019" title="NLC India solar project, 370 acres" location="Tirunelveli, Tamil Nadu" client="NLC India Limited · EPC: LNV Technology" role="Project management consulting, pre-bid and design engineering, with ACE Renewtech"}}
+          <article class="project-card reveal" data-category="utility pmc">
+            <div class="project-card__media project-card__media--placeholder" role="img" aria-label="No photo available for this project">
+              <svg class="icon" aria-hidden="true"><use href="#i-plant"/></svg>
+              <span class="project-card__size">50 MW</span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__type">Utility scale</p>
+              <h3>NLC India solar project</h3>
+              <ul class="project-card__meta" role="list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>Tirunelveli, Tamil Nadu</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg><span><strong>Client:</strong> NLC India Limited · EPC: Marine Electricals</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg><span><strong>Our role:</strong> Project management consulting, with ACE Renewtech</span></li>
+              </ul>
+            </div>
+          </article>
+          {{> project-card category="ci" img="karur-500kw-rooftop-installation" alt="Solar modules being installed on the metal roof of a spinning mill in Karur" size="500 kW" type="Industrial rooftop" title="Rooftop plant for a spinning mill" location="Karur, Tamil Nadu" client="SBM Spinners" role="Design and installation"}}
+          {{> project-card category="ci" img="karpagam-300kw-rooftop-structures" alt="Elevated solar mounting structures across a large institutional rooftop" size="300 kW" type="Institutional rooftop" title="Rooftop plant for an educational trust" location="Coimbatore, Tamil Nadu" client="Karpagam Educational Trust" role="Design and installation"}}
+          {{> project-card category="ci" img="coimbatore-200kw-rooftop" alt="Solar array covering a flat rooftop in Coimbatore" size="200 kW" type="Institutional rooftop" title="Rooftop plant for a charitable trust" location="Coimbatore, Tamil Nadu" client="Abirami Charitable Trust" role="Design and installation"}}
+          {{> project-card category="ci pmc" img="coimbatore-100kw-rooftop" alt="Solar panels on the roof of a multi-storey building in Coimbatore" size="100 kW" type="Institutional rooftop" title="Rooftop plant for an educational trust" location="Coimbatore, Tamil Nadu" client="GRD Educational Trust" role="Project management consulting"}}
+          {{> project-card category="utility" img="gudimangalam-ground-array" alt="Ground-mounted solar array beside an industrial building in Gudimangalam" size="" type="Ground-mounted plant" title="Solar power plant, Gudimangalam" location="Gudimangalam, Tamil Nadu" client="" role="Project execution"}}
+        </div>
+
+        <div class="aside-card aside-card--amber mt-l">
+          <h3>Looking for a project like yours?</h3>
+          <p>We can share more detail about projects similar to your site, size or sector during your consultation.</p>
+          <a class="btn btn--secondary" href="/contact/#enquiry" data-track="cta_click" data-track-label="projects_similar">Request a Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    {{> enquiry-section heading="Start your project with Prosun" text="Tell us what you're planning. We'll get back to you to discuss your site and the next steps." preset="" source="projects"}}

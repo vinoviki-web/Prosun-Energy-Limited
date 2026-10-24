@@ -1,0 +1,13 @@
+{
+  "name": "prosun-energy-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for Prosun Energy Pvt Ltd. No runtime dependencies.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve",
+    "start": "node build.mjs --serve"
+  },
+  "engines": { "node": ">=18" }
+}

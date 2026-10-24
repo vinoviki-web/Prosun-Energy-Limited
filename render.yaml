@@ -1,0 +1,25 @@
+# Render Blueprint: static site built from build.mjs into dist/.
+# Render ignores public/_redirects, so the old WordPress URL redirects are repeated here.
+services:
+  - type: web
+    name: prosun-energy
+    runtime: static
+    buildCommand: npm run build
+    staticPublishPath: ./dist
+    routes:
+      - { type: redirect, source: /about-us-2/, destination: /about/ }
+      - { type: redirect, source: /new/about-us-2/, destination: /about/ }
+      - { type: redirect, source: /leadership/, destination: /about/#leadership }
+      - { type: redirect, source: /customers/, destination: /projects/ }
+      - { type: redirect, source: /institutional-tie-ups/, destination: /about/ }
+      - { type: redirect, source: /contact-us/, destination: /contact/ }
+      - { type: redirect, source: /gallery/, destination: /projects/ }
+      - { type: redirect, source: /project-style-2/, destination: /projects/ }
+      - { type: redirect, source: /new/project-style-2/, destination: /projects/ }
+      - { type: redirect, source: /service/epc-solar/, destination: /services/solar-epc/ }
+      - { type: redirect, source: /service/operation-maintenance/, destination: /services/operations-maintenance/ }
+      - { type: redirect, source: /service/*, destination: /services/ }
+      - { type: redirect, source: /on-grid-solar-powerplant/, destination: /services/on-grid-off-grid/ }
+      - { type: redirect, source: /off-grid-solar-powerplant/, destination: /services/on-grid-off-grid/ }
+      - { type: redirect, source: /product-category/domestic-solar-solutions/, destination: /services/domestic-rooftop/ }
+      - { type: redirect, source: /product/*, destination: /services/domestic-rooftop/ }

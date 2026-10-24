@@ -1,0 +1,71 @@
+<!--page {
+  "title": "Solar Plant Operations & Maintenance (O&M) | Prosun Energy",
+  "description": "Solar O&M from Prosun Energy: preventive maintenance, module cleaning, periodic health checks, monitoring, reporting and genuine spares to keep your solar plant generating as designed.",
+  "nav": "services",
+  "crumbs": [{"name": "Services", "url": "/services/"}, {"name": "Operations & maintenance", "url": "/services/operations-maintenance/"}],
+  "faq": [
+    ["Why does a solar plant need maintenance?", "Dust, bird droppings, loose connections, inverter faults and vegetation all reduce generation, often without anyone noticing. Regular cleaning, inspection and monitoring catch these issues early."],
+    ["How often should solar modules be cleaned?", "It depends on local dust, rainfall and nearby activity such as construction or farming. We recommend a cleaning schedule for your site and adjust it based on performance data."],
+    ["Do you maintain plants that Prosun did not build?", "Our O&M service is offered after we commission a project. If your plant was installed by someone else, contact us with its details and we will tell you whether we can take it on."]
+  ]
+} -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__media"><x-img name="puliyampatti-4mw-module-cleaning" alt="" sizes="100vw" loading="eager"></div>
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li aria-current="page">Operations &amp; maintenance</li></ol></nav>
+          <p class="eyebrow">Operations &amp; maintenance</p>
+          <h1 class="h1" id="page-title">Keep your solar plant producing as designed</h1>
+          <p class="lead">A solar plant is a long-term asset. Our O&amp;M service extends our work beyond commissioning, giving you one partner for the whole life of the plant.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary btn--lg" href="#enquiry" data-track="cta_click" data-track-label="om_hero">Ask About O&amp;M</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="om-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What we do</p>
+          <h2 class="h2" id="om-title">O&amp;M services</h2>
+          <p class="lead">Small problems cost generation every day they go unnoticed. Our service is built around finding and fixing them early.</p>
+        </div>
+        <div class="scope-grid">
+          <div class="scope-item"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg><h3>Preventive maintenance</h3><p>Scheduled inspection and maintenance of modules, structures, inverters, cabling and protection equipment.</p></div>
+          <div class="scope-item"><svg class="icon" aria-hidden="true"><use href="#i-drop"/></svg><h3>Module cleaning</h3><p>Regular cleaning to a schedule that suits your site's dust and weather conditions.</p></div>
+          <div class="scope-item"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><h3>Periodic health checks</h3><p>Plant health checks to spot degradation, hot spots, loose connections and wear before they become failures.</p></div>
+          <div class="scope-item"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg><h3>Monitoring, analytics &amp; reporting</h3><p>Real-time performance data and regular reports, so you can see how your plant is performing.</p></div>
+          <div class="scope-item"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg><h3>O&amp;M manuals</h3><p>Clear operations and maintenance documentation for your plant and your on-site team.</p></div>
+          <div class="scope-item"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg><h3>Corrective maintenance &amp; spares</h3><p>Fault response and repairs using genuine spare parts.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white" aria-labelledby="why-om-title">
+      <div class="container split">
+        <figure class="m0">
+          <div class="split__media"><x-img name="gudimangalam-ground-array-2" alt="Ground-mounted solar rows at the Gudimangalam plant" sizes="(max-width: 860px) 100vw, 560px"></div>
+          <figcaption class="figure-caption">Ground-mounted plant at Gudimangalam.</figcaption>
+        </figure>
+        <div>
+          <p class="eyebrow">One partner</p>
+          <h2 class="h2" id="why-om-title">The team that built it, looking after it</h2>
+          <p>When the same company designs, builds and maintains your plant, there is no gap in knowledge or responsibility. Our O&amp;M team works from the design and commissioning records of your plant.</p>
+          <ul class="checklist">
+            <li>A single point of contact for performance questions</li>
+            <li>Maintenance planned around your operations</li>
+            <li>Issues traced back to design, equipment or site causes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head"><p class="eyebrow">Questions</p><h2 class="h2" id="faq-title">O&amp;M: common questions</h2></div>
+        {{faq}}
+      </div>
+    </section>
+
+    {{> enquiry-section heading="Talk to us about maintaining your plant" text="Tell us the capacity and location of your plant and what support you need. We'll get back to you to discuss a maintenance plan." preset="Operations and maintenance" source="service_om"}}

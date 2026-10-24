@@ -1,0 +1,28 @@
+<section class="section enquiry" id="enquiry" aria-labelledby="enquiry-title">
+      <div class="container enquiry__grid">
+        <div class="enquiry__intro">
+          <p class="eyebrow">Request a consultation</p>
+          <h2 class="h2" id="enquiry-title">{{heading}}</h2>
+          <p class="lead">{{text}}</p>
+          <ul class="contact-list" role="list">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              <div><span class="contact-list__label">Toll-free</span><a href="tel:18001023317" data-track="phone_click" data-track-label="enquiry_tollfree">1800 102 3317</a></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              <div><span class="contact-list__label">Mobile</span><a href="tel:+919629635040" data-track="phone_click" data-track-label="enquiry_mobile">+91 96296 35040</a></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+              <div><span class="contact-list__label">Email</span><a href="mailto:info@psun.in" data-track="email_click" data-track-label="enquiry">info@psun.in</a></div>
+            </li>
+            <li data-whatsapp hidden>
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              <div><span class="contact-list__label">WhatsApp</span><a href="#" data-whatsapp-link data-track="whatsapp_click" data-track-label="enquiry">Chat with us</a></div>
+            </li>
+          </ul>
+        </div>
+        {{> enquiry-form preset="{{preset}}" source="{{source}}"}}
+      </div>
+    </section>

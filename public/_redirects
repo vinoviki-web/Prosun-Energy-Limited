@@ -1,0 +1,19 @@
+# Old prosunindia.com (WordPress) URLs -> new pages. Netlify / Cloudflare Pages format.
+# For Apache or nginx, see IMPLEMENTATION-NOTES.md.
+/about-us-2/                                   /about/                              301
+/new/about-us-2/                               /about/                              301
+/leadership/                                   /about/#leadership                   301
+/customers/                                    /projects/                           301
+/institutional-tie-ups/                        /about/                              301
+/contact-us/                                   /contact/                            301
+/gallery/                                      /projects/                           301
+/project-style-2/                              /projects/                           301
+/new/project-style-2/                          /projects/                           301
+/projects/*                                    /projects/                           301
+/service/epc-solar/                            /services/solar-epc/                 301
+/service/operation-maintenance/                /services/operations-maintenance/    301
+/service/*                                     /services/                           301
+/on-grid-solar-powerplant/                     /services/on-grid-off-grid/          301
+/off-grid-solar-powerplant/                    /services/on-grid-off-grid/          301
+/product-category/domestic-solar-solutions/    /services/domestic-rooftop/          301
+/product/*                                     /services/domestic-rooftop/          301

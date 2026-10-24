@@ -1,0 +1,18 @@
+{
+  "aerial-solar-plant-2": {"w": 1280, "h": 720},
+  "coimbatore-100kw-rooftop": {"w": 1280, "h": 960},
+  "coimbatore-200kw-rooftop-hills": {"w": 1280, "h": 960},
+  "coimbatore-200kw-rooftop": {"w": 1280, "h": 960},
+  "gudimangalam-ground-array-2": {"w": 1280, "h": 960},
+  "gudimangalam-ground-array": {"w": 1280, "h": 960},
+  "hero-aerial-solar-plant": {"w": 1280, "h": 720},
+  "karpagam-300kw-rooftop-structures": {"w": 1280, "h": 960},
+  "karur-500kw-inverters": {"w": 1280, "h": 960},
+  "karur-500kw-rooftop-installation": {"w": 1156, "h": 867},
+  "nlc-100mw-aerial": {"w": 1500, "h": 454},
+  "puliyampatti-4mw-array": {"w": 1152, "h": 671},
+  "puliyampatti-4mw-module-cleaning": {"w": 1152, "h": 782},
+  "puliyampatti-4mw-substation": {"w": 1599, "h": 899},
+  "residential-rooftop": {"w": 838, "h": 505},
+  "solar-water-heater": {"w": 1280, "h": 853}
+}
